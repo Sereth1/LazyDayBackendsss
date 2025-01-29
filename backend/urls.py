@@ -17,8 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from app.views.cinemas import find_cinemas  
-
+from app.views.movies import find_movies
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('cinemas/', find_cinemas, name='cinema-list'),  
-]
+    path('cinemas/', find_cinemas, name='cinema-list'),
+    path('find-movies/', find_movies, name="find_movies"),]
