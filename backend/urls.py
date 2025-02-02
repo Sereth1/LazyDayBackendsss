@@ -18,7 +18,11 @@ from django.contrib import admin
 from django.urls import path
 from app.views.cinemas import find_cinemas  
 from app.views.movies import find_movies
+from app.views.crud.get.getConsole import get_consoles  
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('cinemas/', find_cinemas, name='cinema-list'),
-    path('find-movies/', find_movies, name="find_movies"),]
+    path('find-movies/', find_movies, name="find_movies"),
+    path('get_consoles/', get_consoles, name='find_consoles') 
+]

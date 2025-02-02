@@ -1,0 +1,20 @@
+-----------------------------------------------
+
+if I want to install anything I need to use the 
+
+venv\Scripts\activate
+
+-----------------------------------------------
+
+how to start the app
+
+ python manage.py runserver
+
+-----------------------------------------------
+ 
+ to do some of the changes 
+
+ python manage.py migrate sessions
+
+-----------------------------------------------
+
