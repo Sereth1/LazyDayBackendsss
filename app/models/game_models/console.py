@@ -1,6 +1,9 @@
 from django.db import models
 
 class Console(models.Model):
+    class Meta:
+        db_table = "consoles"
+
     HANDHELD = "Handheld"
     HOME_CONSOLE = "Home Console"
     HYBRID = "Hybrid"
